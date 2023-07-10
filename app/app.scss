@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.p-galleria {
+  .p-galleria-thumbnail-container {
+    background: transparent;
+  } 
+}
+.p-galleria-thumbnail-item-content {
+  border-radius: 7px;
+  overflow: hidden;
+}
+.p-galleria-thumbnail-wrapper {
+  margin-right: 7px;
+}
+.p-galleria-item-wrapper, .p-galleria-item-container {
+  overflow: hidden;
+  img {
+    border-radius: 8px;
+  }
+}
+// Customize Button
+.p-button-default {
+  &:focus {
+    outline: none !important;
+    box-shadow: none;
+  }
+}

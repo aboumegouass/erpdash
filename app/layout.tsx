@@ -1,6 +1,13 @@
-import './globals.css'
+"use client"
 import { Inter } from 'next/font/google'
 
+import 'primereact/resources/themes/saga-blue/theme.css';
+import 'primereact/resources/primereact.min.css';
+import 'primeicons/primeicons.css';
+// import 'primeflex/primeflex.css';
+import './app.css';
+import HomeNavbar from '@/components/Navbar/HomeNavbar';
+import HomeNavbar2 from '@/components/Navbar/HomeNavbar2';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -15,7 +22,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <HomeNavbar2 />
+        {children}
+      </body>
     </html>
   )
 }
